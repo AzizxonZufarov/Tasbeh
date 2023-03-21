@@ -1,0 +1,73 @@
+	<!DOCTYPE html>
+	
+	<html>
+	<head>
+	<title>Tasbeh sanovchi qurilma</title>
+    <style type="text/css">
+        .tasbeh{
+            width: 130px;
+            height: 150px;
+            background-color: coral;
+            border: 1px solid chocolate;
+            position: absolute;
+            top: 10%;
+            left: 39%;
+            border-radius: 20%;
+        }
+        .ekran{
+            width: 55%;
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            height: 30px;
+            caret-color: white;
+            border-radius: 9%;
+            border: 1px solid floralwhite;
+            text-align: center;
+            font-size: 34px;
+            
+        }
+        .tugma{
+            width: 43px;
+            position: absolute;
+            top: 42%;
+            left: 35%;
+            height: 43px;
+            border-radius: 50%;
+            background-color: gray;
+        }
+        .nolga{
+            width: 29px;
+            position: absolute;
+            top: 74%;
+            left: 41%;
+            height: 29px;
+            border-radius: 50%;
+            background-color: burlywood;
+        }
+        </style>
+        
+	</head>
+	<body>
+	    <div class="tasbeh">
+           <input type="text" class="ekran" value="0"/>
+            <button class="tugma"></button>
+             <button class="nolga"></button>
+        </div>       
+        <script type = "text/javascript">
+            document.querySelector('.tugma').addEventListener('click', function(){
+                var ekran = document.querySelector('.ekran');
+                console.log(typeof parseInt(ekran.value));
+                ekran.value = parseInt(ekran.value)+1;
+            });  
+            document.querySelector('.nolga').addEventListener('click', function(){
+              document.querySelector('.ekran').value = 0;
+                
+            });   
+        </script>
+
+
+	</body>
+	</html
+ 
+        
